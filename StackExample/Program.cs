@@ -8,7 +8,7 @@ namespace StackExample {
         static Stack<long> stack = new Stack<long>(); //long is 2x of int digit slots
 
         static bool Calculate() {
-            Console.Write("Enter a number or operator. x to calculate, X to quit: ");
+            Console.Write("Enter a number or operator. x to calculate, X to quit: "); //writeline puts cursor at start of next line, write keeps cursor on same line.
             var response = Console.ReadLine();      //read the input and store in variable. Always comes out as string, so parse later for other var type.
             switch(response) {
                 case "+": {                  //curly brackets added here to add scope so that variables can be reused
